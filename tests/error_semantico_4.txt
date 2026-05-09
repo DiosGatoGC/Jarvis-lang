@@ -1,0 +1,6 @@
+Jarvis, crea numero edad con 20
+Jarvis, crea texto nombre con "Tony"
+
+Jarvis, si edad es igual a nombre:
+    Dime "No deberia permitir esto"
+Termina

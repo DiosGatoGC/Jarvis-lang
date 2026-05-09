@@ -1,0 +1,19 @@
+/*
+Programa valido con constantes,
+operaciones y comparacion
+*/
+
+Jarvis, crea numero contador con 1
+Jarvis, crea numero total con 10
+Jarvis, fija PI con 3.14
+
+Aumenta contador
+Suma 5 a total
+Multiplica total por 2
+Divide total entre 3
+
+Jarvis, si total es mayor o igual que contador:
+    Dime "Total suficiente"
+Si no:
+    Dime "Total bajo"
+Termina

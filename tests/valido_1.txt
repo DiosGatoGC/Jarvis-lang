@@ -1,0 +1,20 @@
+// Codigo valido basico
+
+Jarvis, crea numero x con 0
+Jarvis, crea numero y con 5
+Jarvis, crea texto mensaje con "Proceso iniciado"
+Jarvis, fija LIMITE con 10
+
+Dime mensaje
+
+Jarvis, si x es menor que y:
+    Dime "x es menor que y"
+Si no:
+    Dime "x no es menor que y"
+Termina
+
+Jarvis, repite 5 veces:
+    Suma 1 a x
+Termina
+
+Dime x

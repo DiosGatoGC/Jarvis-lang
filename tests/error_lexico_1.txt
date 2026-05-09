@@ -1,0 +1,2 @@
+Jarvis, crea numero x con 10
+Dime x @

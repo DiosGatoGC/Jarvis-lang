@@ -1,0 +1,5 @@
+Jarvis, crea numero x con 10
+
+Jarvis, si x es igual a 10
+    Dime "Es diez"
+Termina
