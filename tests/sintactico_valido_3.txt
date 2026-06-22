@@ -1,0 +1,9 @@
+// Operaciones aritmeticas sobre variables
+Jarvis, crea numero x con 10
+Suma 5 a x
+Resta 2 a x
+Multiplica x por 3
+Divide x entre 2
+Aumenta x
+Disminuye x
+Dime x

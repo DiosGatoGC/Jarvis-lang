@@ -1,0 +1,3 @@
+// Declaracion y print simple
+Jarvis, crea numero n con 100
+Dime n

@@ -1,0 +1,9 @@
+// IR: if/else con rama correcta segun aritmetica
+// 10 - 3 = 7 > 5, salida esperada: grande
+Jarvis, crea numero x con 10
+Resta 3 a x
+Jarvis, si x es mayor que 5:
+    Dime "grande"
+Si no:
+    Dime "chico"
+Termina

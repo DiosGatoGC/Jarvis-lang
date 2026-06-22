@@ -1,0 +1,8 @@
+// Estructuras anidadas: if dentro de repeat
+Jarvis, crea numero i con 0
+Jarvis, repite 3 veces:
+    Aumenta i
+    Jarvis, si i es mayor que 1:
+        Dime "mayor que uno"
+    Termina
+Termina

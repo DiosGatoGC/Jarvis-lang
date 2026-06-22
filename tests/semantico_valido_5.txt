@@ -1,0 +1,9 @@
+// Variables usadas en scopes de if y repeat sin conflicto
+Jarvis, crea numero total con 0
+Jarvis, crea numero limite con 3
+Jarvis, repite 3 veces:
+    Suma 1 a total
+Termina
+Jarvis, si total es igual a limite:
+    Dime "coincide"
+Termina

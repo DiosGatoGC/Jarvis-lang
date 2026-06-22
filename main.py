@@ -43,6 +43,33 @@ def main():
         return
 
     print("Código aceptado correctamente.")
+    
+    print("Iniciando la generación de código intermedio (LLVM IR)...")
+    
+    from codegen.ir_visitor import IRVisitor
+    import subprocess
+
+    # 1. Instanciar el visitor de código intermedio y recorrer el AST
+    ir_visitor = IRVisitor()
+    llvm_ir = ir_visitor.visit(tree)
+
+    # 2. Guardar el LLVM IR generado en un archivo de texto plano
+    output_ll = "salida.ll"
+    with open(output_ll, "w") as f:
+        f.write(llvm_ir)
+    print(f"Archivo de representación intermedia guardado como: {output_ll}")
+
+    # 3. Invocar a Clang mediante un subproceso para crear el binario ejecutable
+    try:
+        nombre_ejecutable = "./ejecutable"
+        # Ejecuta el comando nativo: clang salida.ll -o ./ejecutable
+        subprocess.run(["clang", output_ll, "-o", nombre_ejecutable], check=True)
+        print(f"¡Compilación nativa completada con éxito! Ejecutable creado: 	  {nombre_ejecutable}")
+    except subprocess.CalledProcessError as e:
+        print("Error durante la compilación nativa con Clang:", e)
+    except FileNotFoundError:
+        print("Error: No se encontró 'clang' instalado en el sistema operativo.")
+   
 
     warns = visitor.symtab.unused_warnings()
     if warns:

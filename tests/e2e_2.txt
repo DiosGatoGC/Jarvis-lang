@@ -1,0 +1,12 @@
+// E2E: area de un rectangulo con clasificacion
+// 6 * 4 = 24 > 20, salida esperada: Area del rectangulo: / 24 / Rectangulo grande
+Jarvis, crea numero ancho con 6
+Jarvis, crea numero alto con 4
+Jarvis, crea numero area con ancho * alto
+Dime "Area del rectangulo:"
+Dime area
+Jarvis, si area es mayor que 20:
+    Dime "Rectangulo grande"
+Si no:
+    Dime "Rectangulo chico"
+Termina

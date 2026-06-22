@@ -1,0 +1,5 @@
+// Literales numericos: entero y decimal
+Jarvis, crea numero entero con 42
+Jarvis, crea numero decimal con 3.14
+Dime entero
+Dime decimal

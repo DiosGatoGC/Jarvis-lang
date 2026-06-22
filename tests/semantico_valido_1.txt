@@ -1,0 +1,6 @@
+// Variables de los tres tipos declaradas correctamente
+Jarvis, crea numero edad con 25
+Jarvis, crea texto nombre con "Jarvis"
+Jarvis, crea logico activo con verdadero
+Dime edad
+Dime nombre

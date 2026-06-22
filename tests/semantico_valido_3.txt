@@ -1,0 +1,4 @@
+// Reasignacion con tipo correcto
+Jarvis, crea numero x con 0
+Jarvis, cambia x a 42
+Dime x

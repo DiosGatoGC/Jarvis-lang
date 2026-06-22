@@ -1,0 +1,8 @@
+// IR: printf para los tres tipos
+// Salida esperada: 42 / Hola / 1
+Jarvis, crea numero n con 42
+Jarvis, crea texto msg con "Hola"
+Jarvis, crea logico flag con verdadero
+Dime n
+Dime msg
+Dime flag

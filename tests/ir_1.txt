@@ -1,0 +1,8 @@
+// IR: declaracion y aritmetica basica
+// Salida esperada: 8 / 21
+Jarvis, crea numero x con 5
+Jarvis, crea numero y con 3
+Jarvis, crea numero suma con x + y
+Jarvis, crea numero producto con x * y
+Dime suma
+Dime producto

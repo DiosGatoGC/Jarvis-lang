@@ -1,0 +1,5 @@
+// Expresion aritmetica con variables de tipo numero
+Jarvis, crea numero x con 10
+Jarvis, crea numero y con 3
+Jarvis, crea numero z con x + y
+Dime z

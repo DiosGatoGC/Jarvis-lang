@@ -1,0 +1,16 @@
+// Todos los operadores de comparacion
+Jarvis, crea numero num1 con 5
+Jarvis, crea numero num2 con 5
+
+Jarvis, si num1 es igual a num2:
+    Dime "igual"
+Termina
+Jarvis, si num1 es diferente de 0:
+    Dime "diferente de cero"
+Termina
+Jarvis, si num1 es menor o igual que num2:
+    Dime "menor o igual"
+Termina
+Jarvis, si num1 es mayor o igual que num2:
+    Dime "mayor o igual"
+Termina

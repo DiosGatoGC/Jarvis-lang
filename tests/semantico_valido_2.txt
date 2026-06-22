@@ -1,0 +1,6 @@
+// Constante usada correctamente (solo lectura)
+Jarvis, fija MAX con 100
+Jarvis, crea numero x con 50
+Jarvis, si x es menor que MAX:
+    Dime "dentro del limite"
+Termina

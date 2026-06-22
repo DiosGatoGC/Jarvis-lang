@@ -1,0 +1,7 @@
+// IR: loop repeat como acumulador
+// 0 + 10 * 4 iteraciones = 40, salida esperada: 40
+Jarvis, crea numero total con 0
+Jarvis, repite 4 veces:
+    Suma 10 a total
+Termina
+Dime total

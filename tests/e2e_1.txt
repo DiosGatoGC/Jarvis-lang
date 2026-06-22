@@ -1,0 +1,9 @@
+// E2E: suma de 1 a 5 usando repeat
+// 1+2+3+4+5 = 15, salida esperada: 15
+Jarvis, crea numero suma con 0
+Jarvis, crea numero i con 1
+Jarvis, repite 5 veces:
+    Suma i a suma
+    Aumenta i
+Termina
+Dime suma

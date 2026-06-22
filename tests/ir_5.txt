@@ -1,0 +1,8 @@
+// IR: potencia con repeat (2^3)
+// resultado = 1 * 2 * 2 * 2 = 8, salida esperada: 8
+Jarvis, crea numero base con 2
+Jarvis, crea numero resultado con 1
+Jarvis, repite 3 veces:
+    Multiplica resultado por base
+Termina
+Dime resultado

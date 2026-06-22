@@ -1,0 +1,7 @@
+// Identificadores con guion bajo y digitos
+Jarvis, crea numero valor_1 con 10
+Jarvis, crea numero valor_2 con 20
+Jarvis, crea texto nombre_usuario con "Jarvis"
+Dime valor_1
+Dime valor_2
+Dime nombre_usuario

@@ -1,0 +1,11 @@
+__pycache__/
+*.pyc
+*.pyo
+
+# Salidas del compilador
+salida.ll
+ejecutable
+
+# Archivos intermedios de ANTLR4
+gen/*.interp
+gen/*.tokens

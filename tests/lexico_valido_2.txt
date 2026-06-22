@@ -1,0 +1,8 @@
+// Comentario de linea ignorado correctamente
+/*
+   Comentario de bloque
+   ignorado correctamente
+*/
+Jarvis, crea texto saludo con "Hola mundo"
+Jarvis, crea logico activo con verdadero
+Dime saludo

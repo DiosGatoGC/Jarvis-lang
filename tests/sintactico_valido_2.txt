@@ -1,0 +1,5 @@
+// If sin bloque else
+Jarvis, crea numero x con 8
+Jarvis, si x es mayor que 5:
+    Dime "mayor que cinco"
+Termina

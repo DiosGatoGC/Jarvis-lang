@@ -1,0 +1,7 @@
+// E2E: conversion de Celsius a Fahrenheit
+// F = C * 9 / 5 + 32, con C=100 => F=212
+// Salida esperada: Temperatura en Fahrenheit: / 212
+Jarvis, crea numero celsius con 100
+Jarvis, crea numero fahrenheit con celsius * 9 / 5 + 32
+Dime "Temperatura en Fahrenheit:"
+Dime fahrenheit
