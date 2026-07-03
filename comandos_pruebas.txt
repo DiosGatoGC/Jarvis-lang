@@ -1,0 +1,189 @@
+====================================================================
+  JARVIS-LANG — COMANDOS PARA EJECUTAR LAS PRUEBAS UNO POR UNO
+====================================================================
+
+Desde la carpeta raiz del proyecto: /home/ubuntu/Desktop/Jarvis-lang
+Comando base: python3 main.py <archivo>
+
+Para los tests que compilan exitosamente, correr el ejecutable con:
+    ./ejecutable
+
+
+--------------------------------------------------------------------
+  1. TESTS LEXICOS VALIDOS
+  (deben compilar y generar ejecutable sin errores)
+--------------------------------------------------------------------
+
+# Literales numericos: entero (42) y decimal (3.14)
+python3 main.py tests/lexico_valido_1.txt
+
+# Comentarios de linea y de bloque, tipo logico y texto
+python3 main.py tests/lexico_valido_2.txt
+
+# Identificadores con guion bajo y digitos (valor_1, valor_2)
+python3 main.py tests/lexico_valido_3.txt
+
+
+--------------------------------------------------------------------
+  2. TESTS LEXICOS CON ERROR
+  (deben mostrar [Error Lexico] y detenerse)
+--------------------------------------------------------------------
+
+# Simbolo '@' no reconocido — Error en linea 2
+python3 main.py tests/error_lexico_1.txt
+
+# Simbolo '$' dentro de un literal — Error en linea 1
+python3 main.py tests/error_lexico_2.txt
+
+
+--------------------------------------------------------------------
+  3. TESTS SINTACTICOS VALIDOS
+  (deben compilar y generar ejecutable sin errores)
+--------------------------------------------------------------------
+
+# Declaracion de variable y print simple
+python3 main.py tests/sintactico_valido_1.txt
+
+# If sin bloque else
+python3 main.py tests/sintactico_valido_2.txt
+
+# Todas las operaciones aritmeticas sobre variables (Suma, Resta, Multiplica, Divide)
+python3 main.py tests/sintactico_valido_3.txt
+
+# Todos los operadores de comparacion (mayor, menor, igual, diferente, mayor o igual, menor o igual)
+python3 main.py tests/sintactico_valido_4.txt
+
+# Estructuras anidadas: if dentro de repeat
+python3 main.py tests/sintactico_valido_5.txt
+
+
+--------------------------------------------------------------------
+  4. TESTS SINTACTICOS CON ERROR
+  (deben mostrar [Error Sintactico] y detenerse)
+--------------------------------------------------------------------
+
+# Falta la coma despues de "Jarvis" — Error en linea 1
+python3 main.py tests/error_sintactico_1.txt
+
+# Falta ':' al final de la condicion if — Error en linea 4
+python3 main.py tests/error_sintactico_2.txt
+
+# Falta 'Termina' para cerrar el bloque if — Error en linea 4
+python3 main.py tests/error_sintactico_3.txt
+
+
+--------------------------------------------------------------------
+  5. TESTS SEMANTICOS VALIDOS
+  (deben compilar y generar ejecutable sin errores)
+--------------------------------------------------------------------
+
+# Variables de los tres tipos: numero, texto, logico
+python3 main.py tests/semantico_valido_1.txt
+
+# Constante declarada con 'fija' y usada correctamente (solo lectura)
+python3 main.py tests/semantico_valido_2.txt
+
+# Reasignacion de variable con tipo correcto
+python3 main.py tests/semantico_valido_3.txt
+
+# Expresion aritmetica usando variables de tipo numero
+python3 main.py tests/semantico_valido_4.txt
+
+# Variables declaradas y usadas dentro de scopes de if y repeat
+python3 main.py tests/semantico_valido_5.txt
+
+
+--------------------------------------------------------------------
+  6. TESTS SEMANTICOS CON ERROR
+  (deben mostrar [Error Semantico] y detenerse)
+--------------------------------------------------------------------
+
+# Variable 'x' usada sin declarar — Error en linea 1
+python3 main.py tests/error_semantico_1.txt
+
+# Asignar texto a una variable de tipo numero — Error en linea 1
+python3 main.py tests/error_semantico_2.txt
+
+# Intentar modificar una constante 'PI' — Error en linea 2
+python3 main.py tests/error_semantico_3.txt
+
+# Comparar numero con texto (tipos incompatibles) — Error en linea 4
+python3 main.py tests/error_semantico_4.txt
+
+
+--------------------------------------------------------------------
+  7. TESTS DE GENERACION IR (LLVM)
+  (compilar, luego correr el ejecutable y verificar la salida)
+--------------------------------------------------------------------
+
+# Declaracion y aritmetica basica — salida esperada: 8 / 15
+python3 main.py tests/ir_1.txt
+./ejecutable
+
+# Printf para los tres tipos (numero, texto, logico) — salida esperada: 42 / Hola / 1
+python3 main.py tests/ir_2.txt
+./ejecutable
+
+# If/else segun resultado aritmetico (10-3=7 > 5) — salida esperada: grande
+python3 main.py tests/ir_3.txt
+./ejecutable
+
+# Loop repeat como acumulador (4 iteraciones x 10) — salida esperada: 40
+python3 main.py tests/ir_4.txt
+./ejecutable
+
+# Potencia con repeat (2^3 = 1*2*2*2) — salida esperada: 8
+python3 main.py tests/ir_5.txt
+./ejecutable
+
+
+--------------------------------------------------------------------
+  8. TESTS END-TO-END (programas completos)
+  (compilar, luego correr el ejecutable y verificar la salida)
+--------------------------------------------------------------------
+
+# Suma de 1 a 5 usando repeat (1+2+3+4+5) — salida esperada: 15
+python3 main.py tests/e2e_1.txt
+./ejecutable
+
+# Area de rectangulo con clasificacion (6x4=24 > 20) — salida esperada: Area del rectangulo: / 24 / Rectangulo grande
+python3 main.py tests/e2e_2.txt
+./ejecutable
+
+# Conversion Celsius a Fahrenheit (C=100 => F=212) — salida esperada: Temperatura en Fahrenheit: / 212
+python3 main.py tests/e2e_3.txt
+./ejecutable
+
+
+--------------------------------------------------------------------
+  9. TESTS VALIDOS GENERALES
+  (compilar, luego correr el ejecutable)
+--------------------------------------------------------------------
+
+# Programa general: if/else, repeat, texto
+python3 main.py tests/valido_1.txt
+./ejecutable
+
+# Programa general: constantes, operaciones aritmeticas, comparacion
+python3 main.py tests/valido_2.txt
+./ejecutable
+
+
+====================================================================
+  RESUMEN DE RESULTADOS ESPERADOS
+====================================================================
+
+  Tests que deben COMPILAR (22 en total):
+    lexico_valido_1, lexico_valido_2, lexico_valido_3
+    sintactico_valido_1 al 5
+    semantico_valido_1 al 5
+    ir_1 al ir_5
+    e2e_1, e2e_2, e2e_3
+    valido_1, valido_2
+
+  Tests que deben mostrar ERROR (10 en total):
+    error_lexico_1, error_lexico_2
+    error_sintactico_1, error_sintactico_2, error_sintactico_3
+    error_semantico_1, error_semantico_2, error_semantico_3, error_semantico_4
+
+====================================================================
